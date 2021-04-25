@@ -39,8 +39,7 @@ function getTime() {
 }
 
 function init() {
-    getTime();
-    setInterval(getTime, 500)
+    setInterval(getTime, 1000)
 }
 
 init();
