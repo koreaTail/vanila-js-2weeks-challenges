@@ -29,7 +29,7 @@ iGuessNumberForm.addEventListener("submit", playBtnHandler)
 function playBtnHandler(event) {
     event.preventDefault();
     const iChoseNumber = parseInt(iGuessNumberInput.value);
-    if (iChoseNumber == '') {
+    if (isNaN(iChoseNumber)) {
         alert("숫자를 맞춰보세요.")
     } else if (iChoseNumber < 0) {
         alert("0 이상의 정수를 입력해주세요.")
