@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- <h1>Where are you from?</h1>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- <h1>Where are you from?</h1>
     <select class="js-select">
       <option value="">--- Choose Your Country ---</option>
       <option value="KO">Korea</option>
@@ -15,10 +17,10 @@
       <option value="FI">Finland</option>
     </select> -->
 
-    <!-- <h2></h2> -->
-    
-    <!-- sevenDay -->
-    <!-- <h1>Tasks</h1>
+  <!-- <h2></h2> -->
+
+  <!-- sevenDay -->
+  <!-- <h1>Tasks</h1>
     <form action="" class="todoForm">
       <input type="text" class="todoInput">
     </form>
@@ -30,38 +32,40 @@
     <h2>Finish</h2>
     <ul class="finish"></ul> -->
 
-    <!-- eightDay -->
-    <h1>Random Number Game</h1>
+  <!-- eightDay -->
+  <h1>Random Number Game</h1>
 
-    <h3>Generate a number between 0 and <span class="limitNumberPlace">100</span></h3>
-    <form action="" class="rangeForm">
-      <input type="range" class="rangeInput" max="200">
+  <h3>Generate a number between 0 and <span class="limitNumberPlace">100</span></h3>
+  <form action="" class="rangeForm">
+    <input type="range" class="rangeInput" max="200">
+  </form>
+  <div class="guess-number hide">
+    <span>Guess the number:</span>
+    <form action="" class="iGuessNumberForm">
+      <input type="number" class="iGuessNumberInput">
+      <button class="iGuessNumberPlayBtn"><span>play!</span></button>
     </form>
-    <div class="guess-number hide">
-      <span>Guess the number:</span>
-      <form action="" class="iGuessNumberForm">
-        <input type="number" class="iGuessNumberInput" >
-        <button class="iGuessNumberPlayBtn"><span>play!</span></button>
-      </form>
+  </div>
+  <div class="choseAndResult hide">
+    <p>You chose: <span class="iGuessNumberShowingPlace"></span>, the machine chose: <span
+        class="machineChoseNumberShowingPlace"></span>.</p>
+    <strong class="lostText hide">You lost!</strong>
+    <strong class="winText hide">You Win!</strong>
+    <br>
+    <br>
+    <br>
+    <div class="winShowing hide">
+      <h5>현재의 게임에서 이길 확률은 <span class="probability"></span>% 입니다.</h5>
+      <h5>참고로 로또 일등당첨 확률은 <span class="rottoProb">(1/8145060)*100</span>%입니다.</h5>
+      <h5>로또 일등 확률은, 이 게임의 최고 범위 200에 놓고, 4만회정도 실행해서, 연속 성공하셨을 때의 확률과 같습니다.</h5>
+      <h5>화이팅 :)</h5>
     </div>
-    <div class="choseAndResult hide">
-      <p>You chose: <span class="iGuessNumberShowingPlace"></span>, the machine chose: <span class="machineChoseNumberShowingPlace"></span>.</p>
-      <strong class="lostText hide">You lost!</strong>
-      <strong class="winText hide">You Win!</strong>
-      <br>
-      <br>
-      <br>
-      <div class="winShowing hide">
-        <h5>현재의 게임에서 이길 확률은 <span class="probability"></span>% 입니다.</h5>
-        <h5>참고로 로또 일등당첨 확률은 <span class="rottoProb">(1/8145060)*100</span>%입니다.</h5>
-        <h5>로또 일등 확률은, 이 게임의 최고 범위 200에 놓고, 4만회정도 실행해서, 연속 성공하셨을 때의 확률과 같습니다.</h5>
-        <h5>화이팅 :)</h5>
-      </div>
-    </div>
+  </div>
 
-    <!-- <script src="fiveDays.js"></script> -->
-    <!-- <script src="sixDays.js"></script> -->
-    <!-- <script src="sevenDay.js"></script> -->
-    <script src="eightDay.js"></script>
-  </body>
+  <!-- <script src="fiveDays.js"></script> -->
+  <!-- <script src="sixDays.js"></script> -->
+  <!-- <script src="sevenDay.js"></script> -->
+  <script src="eightDay.js"></script>
+</body>
+
 </html>
